@@ -1,4 +1,3 @@
-```markdown
 <p align="center">
   <img src="https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/png/duckdns.png" alt="DuckDNS Logo" width="160">
 </p>
