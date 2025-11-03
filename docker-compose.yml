@@ -1,0 +1,14 @@
+services:
+  duckdns:
+    image: lscr.io/linuxserver/duckdns:latest
+    container_name: duckdns
+    environment:
+      - TZ=${TZ}
+      - SUBDOMAINS=${SUBDOMAINS}
+      - LOG_FILE=${LOG_FILE}      # true => historial a /config
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TOKEN=${TOKEN}
+    volumes:
+      - ./config:/config
+    restart: unless-stopped
